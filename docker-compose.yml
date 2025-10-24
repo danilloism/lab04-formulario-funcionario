@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  exercicio1:
+    build: ./exercicio1
+    container_name: startup-exercicio1
+    ports:
+      - "9001:8080"
+    volumes:
+      - ./exercicio1:/app
+
+  exercicio2:
+    build: ./exercicio2
+    container_name: startup-exercicio2
+    ports:
+      - "9002:8080"
+    volumes:
+      - ./exercicio2:/app
+
+  exercicio3:
+    build: ./exercicio3
+    container_name: startup-exercicio3
+    ports:
+      - "9003:8080"
+    volumes:
+      - ./exercicio3:/app
+
+  exercicio4:
+    build: ./exercicio4
+    container_name: startup-exercicio4
+    ports:
+      - "9004:8080"
+    volumes:
+      - ./exercicio4:/app
