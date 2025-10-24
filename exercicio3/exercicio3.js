@@ -1,4 +1,3 @@
-// Classe Funcionario
 class Funcionario {
   constructor(id, nome, idade, cargo, salario) {
     this.id = id;
