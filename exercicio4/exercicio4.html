@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Exercício 4 - Sistema Completo com Relatórios</title>
+  </head>
+  <body>
+    <h1>Sistema de Gestão de Funcionários</h1>
+
+    <h2>Cadastrar/Editar Funcionário</h2>
+    <form id="formFuncionario">
+      <input
+        type="hidden"
+        id="idEdicao"
+        value=""
+      />
+
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        id="nome"
+        required
+      />
+      <br /><br />
+
+      <label for="idade">Idade:</label>
+      <input
+        type="number"
+        id="idade"
+        required
+      />
+      <br /><br />
+
+      <label for="cargo">Cargo:</label>
+      <input
+        type="text"
+        id="cargo"
+        required
+      />
+      <br /><br />
+
+      <label for="salario">Salário:</label>
+      <input
+        type="number"
+        id="salario"
+        step="0.01"
+        required
+      />
+      <br /><br />
+
+      <button
+        type="button"
+        id="btnCadastrar"
+      >
+        Cadastrar
+      </button>
+      <button
+        type="button"
+        id="btnCancelar"
+      >
+        Cancelar
+      </button>
+    </form>
+
+    <h2>Lista de Funcionários</h2>
+    <table
+      border="1"
+      id="tabelaFuncionarios"
+    >
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Cargo</th>
+          <th>Salário</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpoTabela"></tbody>
+    </table>
+
+    <h2>Relatórios</h2>
+    <button
+      type="button"
+      id="btnSalarioMaior5000"
+    >
+      Salário > R$ 5000
+    </button>
+    <button
+      type="button"
+      id="btnMediaSalarial"
+    >
+      Média Salarial
+    </button>
+    <button
+      type="button"
+      id="btnCargosUnicos"
+    >
+      Cargos Únicos
+    </button>
+    <button
+      type="button"
+      id="btnNomesMaiusculo"
+    >
+      Nomes em Maiúsculo
+    </button>
+
+    <h3>Resultado dos Relatórios</h3>
+    <div id="resultadoRelatorios"></div>
+
+    <script src="exercicio4.js"></script>
+  </body>
+</html>
